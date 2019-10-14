@@ -58,14 +58,7 @@ E o segundo projeto é um worker, com o .NET Core 3.0 temos um template chamado 
 
 Conforme acima, o barramento de eventos é uma abstração do broker, portanto todas as interação são processadas pelo o mesmo:
 
-```mermaid
-%% Example of sequence diagram
-  sequenceDiagram
-    HostedService->>EventBus: send msg: Hello World!
-    alt for subscribes
-    EventBus->>HostedService: HostedService says Hello!
-    end
-```
+![](diagram.svg)
 
 Foi escolhido o RabbitMq para a implementação do barramento de eventos, abaixo segue um método simples de publicação de mensagens pelo baramentos utilizando política de repetição Polly, que repete a tarefa um determinado número de vezes caso o contêiner do RabbitMq não esteja pronto
 
