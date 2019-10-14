@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostedService", "HostedService\HostedService.csproj", "{FF3E05DC-DEF2-4B64-8B3B-F2A71C96DDD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus", "EventBus\EventBus.csproj", "{C0E5B12B-9075-458D-9ACE-AE165EF0785E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2DB9A69C-7279-465A-ABE9-49E92594313B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostedServiceTests", "HostedServiceTests\HostedServiceTests.csproj", "{D139ADBC-F92A-400B-9008-828395C0B53D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF3E05DC-DEF2-4B64-8B3B-F2A71C96DDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3E05DC-DEF2-4B64-8B3B-F2A71C96DDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3E05DC-DEF2-4B64-8B3B-F2A71C96DDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3E05DC-DEF2-4B64-8B3B-F2A71C96DDD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E5B12B-9075-458D-9ACE-AE165EF0785E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E5B12B-9075-458D-9ACE-AE165EF0785E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E5B12B-9075-458D-9ACE-AE165EF0785E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E5B12B-9075-458D-9ACE-AE165EF0785E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D139ADBC-F92A-400B-9008-828395C0B53D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D139ADBC-F92A-400B-9008-828395C0B53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D139ADBC-F92A-400B-9008-828395C0B53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D139ADBC-F92A-400B-9008-828395C0B53D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF3E05DC-DEF2-4B64-8B3B-F2A71C96DDD3} = {2DB9A69C-7279-465A-ABE9-49E92594313B}
+		{D139ADBC-F92A-400B-9008-828395C0B53D} = {2DB9A69C-7279-465A-ABE9-49E92594313B}
+	EndGlobalSection
+EndGlobal

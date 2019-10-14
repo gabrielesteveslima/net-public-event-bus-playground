@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <UserSecretsId>dotnet-BariBank.Playground.Worker-D5BAB233-F73A-4045-BDAC-F2AA3C47E5D0</UserSecretsId>
+        <RootNamespace>BariBank.Services.HostedService</RootNamespace>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\EventBus\EventBus.csproj" />
+    </ItemGroup>
+    
+</Project>
