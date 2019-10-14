@@ -7,11 +7,18 @@ namespace BariBank.Services.HostedService.IntegrationEvents.Handlers
 {
     public class HelloWorldEventHandler : IEventHandler<HelloWorldEvent>
     {
+        private readonly ILogger _logger;
+
+        public HelloWorldEventHandler(ILogger logger)
+        {
+            _logger = logger;
+        }
+
         public Task Handle(HelloWorldEvent @event)
         {
-            Log.Information(
-                "--- {AppName} says {Message}",
-                @event.ServiceId, HelloWorldEvent.Message);
+            _logger.Information(
+                "--- Receiving integration event: From {ServiceId} - ({@IntegrationEvent})",
+                @event.ServiceId, @event);
 
             return Task.CompletedTask;
         }

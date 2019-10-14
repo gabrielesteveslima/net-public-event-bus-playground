@@ -17,16 +17,17 @@ namespace BariBank.EventBus
     {
         private const string AutofacScopeName = "BariBankScope";
         private const string BrokerName = "BariBank";
-        private readonly ILifetimeScope _autofac;
 
+        private readonly ILifetimeScope _autofac;
         private readonly IRabbitMqConnection _connection;
         private readonly string _queueName;
         private readonly ISubscriptionsManage _subscriptionsManage;
+        private readonly ILogger _logger;
 
         private IModel _consumerChannel;
 
         public EventBus(IRabbitMqConnection connection,
-            ILifetimeScope autofac, ISubscriptionsManage subsManager, string queueName = null)
+            ILifetimeScope autofac, ISubscriptionsManage subsManager, ILogger logger, string queueName = null)
         {
             _connection =
                 connection ?? throw new ArgumentNullException(nameof(connection));
@@ -34,6 +35,7 @@ namespace BariBank.EventBus
             _queueName = queueName;
             _consumerChannel = CreateConsumerChannel();
             _autofac = autofac;
+            _logger = logger;
         }
 
         public void Dispose()
@@ -76,7 +78,7 @@ namespace BariBank.EventBus
             var eventName = _subscriptionsManage.GetEventKey<T>();
             DoInternalSubscription(eventName);
 
-            Log.Information("Subscribing to event {EventName} with {EventHandler}", eventName,
+            _logger.Information("Subscribing to event {EventName} with {EventHandler}", eventName,
                 typeof(TH));
 
             _subscriptionsManage.AddSubscription<T, TH>();

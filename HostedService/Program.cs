@@ -63,8 +63,9 @@ namespace BariBank.Services.HostedService
                 var connection = componentContext.Resolve<IRabbitMqConnection>();
                 var subsManage = componentContext.Resolve<ISubscriptionsManage>();
                 var lifeTimeScope = componentContext.Resolve<ILifetimeScope>();
+                var logger = componentContext.Resolve<ILogger>();
 
-                var eventBus = new EventBus.EventBus(connection, lifeTimeScope, subsManage, ApplicationName);
+                var eventBus = new EventBus.EventBus(connection, lifeTimeScope, subsManage, logger, ApplicationName);
                 ConfigureSubscribes(eventBus);
 
                 return eventBus;
