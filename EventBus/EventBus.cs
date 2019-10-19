@@ -2,16 +2,16 @@ using System;
 using System.Text;
 using System.Threading.Tasks;
 using Autofac;
-using BariBank.EventBus.Abstractions;
-using BariBank.EventBus.Connection;
-using BariBank.EventBus.Connection.ResiliencePolicies;
-using BariBank.EventBus.Events;
+using EventBusPlayground.Abstractions;
+using EventBusPlayground.Connection;
+using EventBusPlayground.Connection.ResiliencePolicies;
+using EventBusPlayground.Events;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using Serilog;
 
-namespace BariBank.EventBus
+namespace EventBusPlayground
 {
     public class EventBus : IEventBus, IDisposable
     {

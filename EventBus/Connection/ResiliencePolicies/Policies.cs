@@ -5,7 +5,7 @@ using Polly.Retry;
 using RabbitMQ.Client.Exceptions;
 using Serilog;
 
-namespace BariBank.EventBus.Connection.ResiliencePolicies
+namespace EventBusPlayground.Connection.ResiliencePolicies
 {
     public static class Policies
     {

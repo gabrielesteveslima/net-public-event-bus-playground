@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using BariBank.EventBus.Abstractions;
-using BariBank.EventBus.Events;
+using EventBusPlayground.Abstractions;
+using EventBusPlayground.Events;
 
-namespace BariBank.EventBus
+namespace EventBusPlayground
 {
     public class SubscriptionsManager : ISubscriptionsManage
     {

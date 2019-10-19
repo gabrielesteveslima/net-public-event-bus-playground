@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using BariBank.EventBus.Abstractions;
-using BariBank.Services.HostedService.IntegrationEvents.Events;
+using EventBusPlayground.Abstractions;
+using EventBusPlayground.Services.HostedService.IntegrationEvents.Events;
 using Serilog;
 
-namespace BariBank.Services.HostedService.IntegrationEvents.Handlers
+namespace EventBusPlayground.Services.HostedService.IntegrationEvents.Handlers
 {
     public class HelloWorldEventHandler : IEventHandler<HelloWorldEvent>
     {

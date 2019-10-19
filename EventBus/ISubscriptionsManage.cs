@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using BariBank.EventBus.Abstractions;
-using BariBank.EventBus.Events;
+using EventBusPlayground.Abstractions;
+using EventBusPlayground.Events;
 
-namespace BariBank.EventBus
+namespace EventBusPlayground
 {
     public interface ISubscriptionsManage
     {

@@ -2,19 +2,18 @@ using System;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using BariBank.EventBus;
-using BariBank.EventBus.Abstractions;
-using BariBank.EventBus.Connection;
-using BariBank.Services.HostedService.IntegrationEvents;
-using BariBank.Services.HostedService.IntegrationEvents.Events;
-using BariBank.Services.HostedService.IntegrationEvents.Handlers;
+using EventBusPlayground.Abstractions;
+using EventBusPlayground.Connection;
+using EventBusPlayground.Services.HostedService.IntegrationEvents;
+using EventBusPlayground.Services.HostedService.IntegrationEvents.Events;
+using EventBusPlayground.Services.HostedService.IntegrationEvents.Handlers;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RabbitMQ.Client;
 using Serilog;
 using Serilog.Sinks.Elasticsearch;
 
-namespace BariBank.Services.HostedService
+namespace EventBusPlayground.Services.HostedService
 {
     public static class Program
     {
@@ -65,7 +64,7 @@ namespace BariBank.Services.HostedService
                 var lifeTimeScope = componentContext.Resolve<ILifetimeScope>();
                 var logger = componentContext.Resolve<ILogger>();
 
-                var eventBus = new EventBus.EventBus(connection, lifeTimeScope, subsManage, logger, ApplicationName);
+                var eventBus = new EventBus(connection, lifeTimeScope, subsManage, logger, ApplicationName);
                 ConfigureSubscribes(eventBus);
 
                 return eventBus;

@@ -5,7 +5,7 @@
 
         <IsPackable>false</IsPackable>
 
-        <RootNamespace>BariBank.Services.HostedServiceTests</RootNamespace>
+        <RootNamespace>EventBusPlayground.Services.HostedServiceTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

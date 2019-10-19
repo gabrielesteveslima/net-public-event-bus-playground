@@ -1,7 +1,7 @@
 using System;
 using RabbitMQ.Client;
 
-namespace BariBank.EventBus.Connection
+namespace EventBusPlayground.Connection
 {
     public interface IRabbitMqConnection : IDisposable
     {

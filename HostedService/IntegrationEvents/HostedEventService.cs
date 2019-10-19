@@ -1,10 +1,10 @@
 using System;
 using System.Threading.Tasks;
-using BariBank.EventBus.Abstractions;
-using BariBank.EventBus.Events;
+using EventBusPlayground.Abstractions;
+using EventBusPlayground.Events;
 using Serilog;
 
-namespace BariBank.Services.HostedService.IntegrationEvents
+namespace EventBusPlayground.Services.HostedService.IntegrationEvents
 {
     public class HostedEventService : IHostedEventService
     {

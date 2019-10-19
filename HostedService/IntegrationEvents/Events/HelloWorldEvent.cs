@@ -1,6 +1,6 @@
-using BariBank.EventBus.Events;
+using EventBusPlayground.Events;
 
-namespace BariBank.Services.HostedService.IntegrationEvents.Events
+namespace EventBusPlayground.Services.HostedService.IntegrationEvents.Events
 {
     public class HelloWorldEvent : Event
     {

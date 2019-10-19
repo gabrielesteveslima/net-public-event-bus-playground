@@ -1,13 +1,13 @@
 using System;
-using BariBank.EventBus.Abstractions;
-using BariBank.EventBus.Events;
-using BariBank.Services.HostedService.IntegrationEvents;
-using BariBank.Services.HostedService.IntegrationEvents.Events;
+using EventBusPlayground.Abstractions;
+using EventBusPlayground.Events;
+using EventBusPlayground.Services.HostedService.IntegrationEvents;
+using EventBusPlayground.Services.HostedService.IntegrationEvents.Events;
 using Moq;
 using Serilog;
 using Xunit;
 
-namespace BariBank.Services.HostedServiceTests
+namespace EventBusPlayground.Services.HostedServiceTests
 {
     public class HostedServiceShould
     {

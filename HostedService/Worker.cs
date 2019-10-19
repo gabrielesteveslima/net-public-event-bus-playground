@@ -1,11 +1,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using BariBank.Services.HostedService.IntegrationEvents;
-using BariBank.Services.HostedService.IntegrationEvents.Events;
+using EventBusPlayground.Services.HostedService.IntegrationEvents;
+using EventBusPlayground.Services.HostedService.IntegrationEvents.Events;
 using Microsoft.Extensions.Hosting;
 
-namespace BariBank.Services.HostedService
+namespace EventBusPlayground.Services.HostedService
 {
     /// <summary>
     ///     Worker class inherits a long running <see cref="T:Microsoft.Extensions.Hosting.IHostedService" />.

@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using BariBank.EventBus.Events;
+using EventBusPlayground.Events;
 
-namespace BariBank.Services.HostedService.IntegrationEvents
+namespace EventBusPlayground.Services.HostedService.IntegrationEvents
 {
     public interface IHostedEventService
     {

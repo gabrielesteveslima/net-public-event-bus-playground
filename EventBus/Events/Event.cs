@@ -1,6 +1,6 @@
 using System;
 
-namespace BariBank.EventBus.Events
+namespace EventBusPlayground.Events
 {
     public abstract class Event
     {

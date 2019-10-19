@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using BariBank.EventBus.Events;
+using EventBusPlayground.Events;
 
-namespace BariBank.EventBus.Abstractions
+namespace EventBusPlayground.Abstractions
 {
     public interface IEventHandler<in TEvent> : IEventHandler
         where TEvent : Event

@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
         <UserSecretsId>dotnet-BariBank.Playground.Worker-D5BAB233-F73A-4045-BDAC-F2AA3C47E5D0</UserSecretsId>
-        <RootNamespace>BariBank.Services.HostedService</RootNamespace>
+        <RootNamespace>EventBusPlayground.Services.HostedService</RootNamespace>
         <LangVersion>8</LangVersion>
     </PropertyGroup>
 

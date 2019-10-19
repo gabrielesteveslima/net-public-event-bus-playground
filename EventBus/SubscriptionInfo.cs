@@ -1,6 +1,6 @@
 using System;
 
-namespace BariBank.EventBus
+namespace EventBusPlayground
 {
     public class SubscriptionInfo
     {

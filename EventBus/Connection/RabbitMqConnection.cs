@@ -1,10 +1,10 @@
 using System;
 using System.IO;
-using BariBank.EventBus.Connection.ResiliencePolicies;
+using EventBusPlayground.Connection.ResiliencePolicies;
 using RabbitMQ.Client;
 using Serilog;
 
-namespace BariBank.EventBus.Connection
+namespace EventBusPlayground.Connection
 {
     public class RabbitMqConnection : IRabbitMqConnection
     {
