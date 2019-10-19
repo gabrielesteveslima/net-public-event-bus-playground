@@ -1,6 +1,5 @@
 
-![](baribank.png)
-## Banco Bari Playground
+## Event Bus Playground
 > Serviço possui uma **Hosted Service** que emite uma menssagem de *Hello World* a cada 5 segundos, sendo capaz também de assinar outros eventos emitidos pelo broker. 
 
 #### Requisitos do projeto: 
